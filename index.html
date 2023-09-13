@@ -24,12 +24,9 @@
         </div>
 
         <div>
-            <ul>
-                <li>
-                    <div class="d-flex justify-content-between">
-                        <span>{{tasks}}</span>
-                        <button>X</button>
-                    </div>
+            <ul v-if="tasks.length > 0">
+                <li v-for="(task,index) in tasks">
+                    {{task.text}}
                 </li>
             </ul>
         </div>
