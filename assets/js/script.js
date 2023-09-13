@@ -23,6 +23,25 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+
+            tasks: [
+                {
+                    text: 'andare in banca',
+                    done: true
+                },
+                {
+                    text: 'lavere il cane',
+                    done: true
+                },
+                {
+                    text: 'comprare acqua',
+                    done: false
+                },
+                {
+                    text: 'prenotare barbiere',
+                    done: false
+                },
+            ]
             
         }
     }
