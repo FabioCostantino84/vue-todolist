@@ -31,7 +31,7 @@ createApp({
                 },
                 {
                     text: 'lavere il cane',
-                    done: true
+                    done: false
                 },
                 {
                     text: 'comprare acqua',

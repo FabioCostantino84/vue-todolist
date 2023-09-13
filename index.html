@@ -26,7 +26,8 @@
         <div>
             <ul v-if="tasks.length > 0">
                 <li v-for="(task,index) in tasks">
-                    {{task.text}}
+                    <small :class="task.done ? 'text-decoration-line-through' : '' ">{{task.text}}</small>
+                    
                 </li>
             </ul>
         </div>
