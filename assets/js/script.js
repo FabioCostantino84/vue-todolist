@@ -24,6 +24,7 @@ createApp({
     data() {
         return {
 
+
             tasks: [
                 {
                     text: 'andare in banca',
@@ -42,10 +43,16 @@ createApp({
                     done: false
                 },
             ]
-            
+
+        }
+    },
+    methods: {
+        removeTask(index){
+            this.tasks.splice(index,1);
         }
     }
-    
+
+
 }).mount('#app')
 
 
